@@ -6,8 +6,6 @@
 
     <persistence-unit name="myPersistenceUnit" transaction-type="RESOURCE_LOCAL">
 
-        
-        <!-- Otras configuraciones de persistencia, si es necesario -->
     </persistence-unit>
 
 </persistence>

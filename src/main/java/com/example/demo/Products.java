@@ -25,9 +25,6 @@ public class Products implements Serializable {
 
 	private BigDecimal price;
 
-	//bi-directional many-to-one association to Productsshoprelation
-	//@OneToMany(mappedBy="product")
-	//private List<Productsshoprelations> productsshoprelations;
 
 	public Products() {
 	}
@@ -64,26 +61,6 @@ public class Products implements Serializable {
 		this.price = price;
 	}
 
-/*	public List<Productsshoprelations> getProductsshoprelations() {
-		return this.productsshoprelations;
-	}
 
-	public void setProductsshoprelations(List<Productsshoprelations> productsshoprelations) {
-		this.productsshoprelations = productsshoprelations;
-	}
-
-	public Productsshoprelations addProductsshoprelation(Productsshoprelations productsshoprelation) {
-		getProductsshoprelations().add(productsshoprelation);
-		productsshoprelation.setProduct(this);
-
-		return productsshoprelation;
-	}
-
-	public Productsshoprelations removeProductsshoprelation(Productsshoprelations productsshoprelation) {
-		getProductsshoprelations().remove(productsshoprelation);
-		productsshoprelation.setProduct(null);
-
-		return productsshoprelation;
-	}*/
 
 }

@@ -25,10 +25,53 @@ public class Users implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_Users")
     private int id_Users;
+    
+    private String email;
 
+    private String name;
 
+    private String password;
+
+    private String surname;
+    
+    private String username;
+
+	private boolean admin;
+    
+    private boolean baja;
+    
+    public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public boolean isBaja() {
+		return baja;
+	}
+
+    public boolean getAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
+
+	public boolean igetBaja() {
+		return baja;
+	}
+
+	public void setBaja(boolean baja) {
+		this.baja = baja;
+	}
+
+	public Users() {
+    }
+    
     public int getId_Users() {
 		return id_Users;
 	}
@@ -43,22 +86,6 @@ public class Users implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	public BigDecimal getLatitude() {
-		return latitude;
-	}
-
-	public void setLatitude(BigDecimal latitude) {
-		this.latitude = latitude;
-	}
-
-	public BigDecimal getLongitude() {
-		return longitude;
-	}
-
-	public void setLongitude(BigDecimal longitude) {
-		this.longitude = longitude;
 	}
 
 	public String getName() {
@@ -77,32 +104,16 @@ public class Users implements Serializable {
 		this.password = password;
 	}
 
-	public String getSuname() {
-		return suname;
+	public String getSurname() {
+		return surname;
 	}
 
-	public void setSuname(String suname) {
-		this.suname = suname;
+	public void setSurname(String surname) {
+		this.surname = surname;
 	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 
-	private String email;
-
-    private BigDecimal latitude;
-
-    private BigDecimal longitude;
-
-    private String name;
-
-    private String password;
-
-    private String suname;
-
-    public Users() {
-    }
-
-    // Getters y Setters...
 }
